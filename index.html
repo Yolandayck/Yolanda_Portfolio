@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yolanda - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-content">
+            <h1 class="logo"></h1>
+            <nav class="nav">
+                <button onclick="scrollToSection('about')" class="nav-link">About</button>
+                <button onclick="scrollToSection('skills')" class="nav-link">Skills</button>
+                <button onclick="scrollToSection('projects')" class="nav-link">Projects</button>
+                <button onclick="scrollToSection('contact')" class="nav-link">Contact</button>
+            </nav>
+            <button onclick="scrollToSection('contact')" class="btn btn-primary btn-sm">
+                Get In Touch
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-content">
+                        <div class="hero-text">
+                            <h1 class="hero-title">
+                                Hi, I'm Yolanda</span>
+                            </h1>
+                            <h2 class="hero-subtitle">A 3rd Year in SIT Infocomms Majoring in Software Development</h2>
+                            <p class="hero-description">
+                                I develop web, mobile, and AI-powered applications, leveraging Java, Kotlin, Python, and modern frameworks. 
+                                I’m passionate about creating clean, efficient code and seamless user experiences.
+                            </p>
+                        </div>
+                        
+                        <div class="hero-buttons">
+                            <button onclick="scrollToSection('projects')" class="btn btn-primary btn-lg">
+                                View My Work
+                            </button>
+                            <button onclick="scrollToSection('contact')" class="btn btn-outline btn-lg">
+                                Contact Me
+                            </button>
+                        </div>
+                        
+                        <div class="social-links">
+                            <a href="https://github.com/Yolandayck" target="_blank" rel="noopener noreferrer" class="social-link">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                                </svg>
+                            </a>
+                            <a href="https://www.linkedin.com/in/yolanda-yen/" target="_blank" rel="noopener noreferrer" class="social-link">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                    <rect x="2" y="9" width="4" height="12"/>
+                                    <circle cx="4" cy="4" r="2"/>
+                                </svg>
+                            </a>
+                            <a href="mailto:yolandayenck@gmail.com" class="social-link">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-image">
+                        <img src="https://images.unsplash.com/photo-1742072594003-abf6ca86e154?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWIlMjBkZXZlbG9wbWVudCUyMGNvZGluZyUyMHNjcmVlbnxlbnwxfHx8fDE3NTc3NDAwNjB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" 
+                             alt="Developer workspace" 
+                             class="hero-img">
+                        <div class="hero-bg-1"></div>
+                        <div class="hero-bg-2"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <!-- <section id="about" class="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-description">
+                        Get to know more about my background, experience, and what drives me as a developer
+                    </p>
+                </div>
+
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="about-paragraph">
+                            I'm a passionate software engineer-in-training with a strong foundation in full-stack development, mobile app design, and emerging technologies like AI and computer vision. 
+                            I have hands-on experience building diverse projects—from mobile apps and web platforms to AI-powered recognition systems and embedded hardware solutions.
+                        </p>
+                        <p class="about-paragraph">
+                            I thrive on solving complex problems, designing intuitive user experiences, and applying innovative solutions across software, hardware, and cloud environments. 
+                            With a background in software engineering and practical experience in internships and personal projects, I bring both technical expertise and a collaborative mindset to every challenge.
+                        </p>
+                        <p class="about-paragraph">
+                            I’m continuously exploring new technologies and enjoy transforming ideas into functional, impactful solutions.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="highlights">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="16,18 22,12 16,6"/>
+                                <polyline points="8,6 2,12 8,18"/>
+                            </svg>
+                        </div>
+                        <h3 class="highlight-title">Clean Code</h3>
+                        <p class="highlight-description">
+                            I write maintainable, scalable code following best practices and industry standards.
+                        </p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+                                <path d="M12 17h.01"/>
+                            </svg>
+                        </div>
+                        <h3 class="highlight-title">Problem Solving</h3>
+                        <p class="highlight-description">
+                            I enjoy tackling complex challenges and finding elegant solutions to technical problems.
+                        </p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                            </svg>
+                        </div>
+                        <h3 class="highlight-title">Collaboration</h3>
+                        <p class="highlight-description">
+                            I thrive in team environments and enjoy working with others.
+                        </p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M8 5h1a4 4 0 0 1 0 8h-1V5z"/>
+                                <path d="M8 9h4"/>
+                                <circle cx="16" cy="16" r="4"/>
+                                <path d="M18.5 14.5 20 16v4h-4l-1.5-1.5"/>
+                            </svg>
+                        </div>
+                        <h3 class="highlight-title">Continuous Learning</h3>
+                        <p class="highlight-description">
+                            I stay updated with the latest technologies and continuously improve my skills.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-description">
+                    Get to know more about my background, experience, and what drives me as a developer
+                </p>
+                </div>
+
+                <!-- Side by side layout -->
+                <div class="about-layout">
+                <!-- Left side: text -->
+                <div class="about-text">
+                    <p class="about-paragraph">
+                    I'm a passionate software engineer-in-training with a strong foundation in full-stack development, mobile app design, and emerging technologies like AI and computer vision. 
+                    I have hands-on experience building diverse projects—from mobile apps and web platforms to AI-powered recognition systems and embedded hardware solutions.
+                    </p>
+                    <p class="about-paragraph">
+                    I thrive on solving complex problems, designing intuitive user experiences, and applying innovative solutions across software, hardware, and cloud environments. 
+                    With a background in software engineering and practical experience in internships and personal projects, I bring both technical expertise and a collaborative mindset to every challenge.
+                    </p>
+                    <p class="about-paragraph">
+                    I’m continuously exploring new technologies and enjoy transforming ideas into functional, impactful solutions.
+                    </p>
+                </div>
+
+                <!-- Right side: highlights -->
+                <div class="highlights">
+                    <div class="highlight-card">
+                    <div class="highlight-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="16,18 22,12 16,6"/>
+                        <polyline points="8,6 2,12 8,18"/>
+                        </svg>
+                    </div>
+                    <h3 class="highlight-title">Clean Code</h3>
+                    <p class="highlight-description">
+                        I write maintainable, scalable code following best practices and industry standards.
+                    </p>
+                    </div>
+
+                    <div class="highlight-card">
+                    <div class="highlight-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+                        <path d="M12 17h.01"/>
+                        </svg>
+                    </div>
+                    <h3 class="highlight-title">Problem Solving</h3>
+                    <p class="highlight-description">
+                        I enjoy tackling complex challenges and finding elegant solutions to technical problems.
+                    </p>
+                    </div>
+
+                    <div class="highlight-card">
+                    <div class="highlight-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                        <circle cx="9" cy="7" r="4"/>
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <h3 class="highlight-title">Collaboration</h3>
+                    <p class="highlight-description">
+                        I thrive in team environments and enjoy working with others.
+                    </p>
+                    </div>
+
+                    <div class="highlight-card">
+                    <div class="highlight-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M8 5h1a4 4 0 0 1 0 8h-1V5z"/>
+                        <path d="M8 9h4"/>
+                        <circle cx="16" cy="16" r="4"/>
+                        <path d="M18.5 14.5 20 16v4h-4l-1.5-1.5"/>
+                        </svg>
+                    </div>
+                    <h3 class="highlight-title">Continuous Learning</h3>
+                    <p class="highlight-description">
+                        I stay updated with the latest technologies and continuously improve my skills.
+                    </p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Skills & Technologies</h2>
+                    <p class="section-description">
+                        I work across frontend, backend, and cloud technologies, 
+                        building scalable web and mobile applications. 
+                        I’m experienced with modern frameworks, databases, 
+                        and tools that streamline development and deployment.
+                    </p>
+                </div>
+                
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">Frontend</h3>
+                        <div class="skill-badges">
+                            <span class="badge">HTML</span>
+                            <span class="badge">CSS</span>
+                            <span class="badge">Bootstrap</span>
+                            <span class="badge">JavaScript</span>
+                            <span class="badge">Kotlin</span>
+                            <span class="badge">Dart(Flutter)</span>
+                            <span class="badge">.NET(Visual Studio)</span>
+                            <span class="badge">OutSystems</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">Backend</h3>
+                        <div class="skill-badges">
+                            <span class="badge">Java</span>
+                            <span class="badge">C#</span>
+                            <span class="badge">C++</span>
+                            <span class="badge">C</span>
+                            <span class="badge">Python</span>
+                            <span class="badge">PHP</span>
+                            <span class="badge">Node.js</span>
+                            <span class="badge">Express</span>
+                            <span class="badge">Flask</span>
+                            <span class="badge">Databases: MySQL, PostgreSQL, MongoDB</span>
+                            <span class="badge">Firebase (Auth, Firestore)</span>
+                            <span class="badge">Assembly Language</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">Tools & Technologies</h3>
+                        <div class="skill-badges">
+                            <span class="badge">Git/GitHub/GitHub Actions</span>
+                            <span class="badge">Docker, VMware, AWS, Azure, IAM, VM setup</span>
+                            <span class="badge">Bash, PowerShell scripting & automation</span>
+                            <span class="badge">OpenCV (character & logo recognition)</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">Methodologies</h3>
+                        <div class="skill-badges">
+                            <span class="badge">Object-Oriented Programming (OOP)</span>
+                            <span class="badge">Agile / Scrum, Rapid Application Development (RAD)</span>
+                            <span class="badge">CI/CD</span>
+                            <span class="badge">Code Review</span>
+                            <span class="badge">Performance Optimization</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-description">
+                        A showcase of my recent work and personal projects that demonstrate my skills and experience
+                    </p>
+                </div>
+
+                <!-- Featured Projects -->
+                <div class="featured-projects">
+
+                    <!-- Automated Car-Plate Recognition System -->
+                    <div class="featured-project">
+                        <div class="project-content">
+                            <h3 class="project-title">Automated Car-Plate Recognition System</h3>
+                            <p class="project-description">
+                                Mobile and web solution using OCR and ML to verify vehicles. Includes license plate, brand, and color recognition, with admin portal integration via Firebase.
+                            </p>
+                            <div class="project-badges">
+                                <span class="badge badge-outline">C++</span>
+                                <span class="badge badge-outline">Java</span>
+                                <span class="badge badge-outline">OpenCV</span>
+                                <span class="badge badge-outline">Firebase</span>
+                            </div>
+                        </div>
+                        <div class="project-image">
+                            <img src="./images/ACRS.png" 
+                                alt="Automated Car-Plate Recognition System Image here" 
+                                class="project-img">
+                        </div>
+                    </div>
+
+                    <!-- Eye Rest -->
+                    <div class="featured-project featured-project-reverse">
+                        <div class="project-content">
+                            <h3 class="project-title">Eye Rest</h3>
+                            <p class="project-description">
+                                Mobile app for healthy screen usage. Features UI/UX design, navigation, in-app camera and audio, with secure Firebase Authentication and Firestore integration.
+                            </p>
+                            <div class="project-badges">
+                                <span class="badge badge-outline">Kotlin</span>
+                                <span class="badge badge-outline">Firebase Auth</span>
+                                <span class="badge badge-outline">Firestore</span>
+                            </div>
+                        </div>
+                        <div class="project-image">
+                            <img src="./images/EyeRest.png" 
+                                alt="Eye Rest Image" 
+                                class="project-img">
+                        </div>
+                    </div>
+
+                    <!-- Medication Reminder -->
+                    <div class="featured-project">
+                        <div class="project-content">
+                            <h3 class="project-title">Medication Reminder App</h3>
+                            <p class="project-description">
+                                Mobile app to track medication schedules. Includes login/authentication and notifications for missed doses.
+                            </p>
+                            <div class="project-badges">
+                                <span class="badge badge-outline">Java</span>
+                            </div>
+                        </div>
+                        <div class="project-image">
+                            <img src="./images/MediApp.png" 
+                                alt="Medication Reminder App Image here" 
+                                class="project-img">
+                        </div>
+                    </div>
+
+                    <!-- Kirby Eats -->
+                    <div class="featured-project featured-project-reverse">
+                        <div class="project-content">
+                            <h3 class="project-title">Kirby Eats</h3>
+                            <p class="project-description">
+                                Full-stack food-ordering platform built in SQL and NoSQL versions. Features authentication and admin-level database operations.
+                            </p>
+                            <div class="project-badges">
+                                <span class="badge badge-outline">HTML</span>
+                                <span class="badge badge-outline">CSS</span>
+                                <span class="badge badge-outline">JavaScript</span>
+                                <span class="badge badge-outline">Python</span>
+                                <span class="badge badge-outline">SQL / NoSQL</span>
+                            </div>
+                        </div>
+                        <div class="project-image">
+                            <img src="./images/KirbyEats.png" 
+                                alt="Kirby Eats Image here" 
+                                class="project-img">
+                        </div>
+                    </div>
+
+                    <!-- LaTeX Converter -->
+                    <div class="featured-project">
+                        <div class="project-content">
+                            <h3 class="project-title">LaTeX Converter</h3>
+                            <p class="project-description">
+                                Converts Word documents to LaTeX with support for text, lists, and images. Includes test cases to ensure formatting accuracy.
+                            </p>
+                            <div class="project-badges">
+                                <span class="badge badge-outline">C++</span>
+                                <span class="badge badge-outline">MongoDB</span>
+                            </div>
+                        </div>
+                        <div class="project-image">
+                            <img src="./images/LaTeXCon.png" 
+                                alt="LaTeX Converter Image here" 
+                                class="project-img">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Other Projects -->
+                <div class="other-projects">
+                    <h3 class="other-projects-title">Other Projects</h3>
+                    <div class="other-projects-grid">
+
+                        <!-- Robotic Car -->
+                        <div class="project-card">
+                            <img src="./images/RoboticCar.png" 
+                                alt="Robotic Car" 
+                                class="project-card-img">
+                            <div class="project-card-content">
+                                <h4 class="project-card-title">Robotic Car</h4>
+                                <p class="project-card-description">
+                                    Embedded system with ultrasonic sensors and wheel encoder for precise navigation and obstacle detection.
+                                </p>
+                                <div class="project-card-badges">
+                                    <span class="badge badge-secondary">C</span>
+                                    <span class="badge badge-secondary">CMake</span>
+                                    <span class="badge badge-secondary">Hardware</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- E-Commerce Website -->
+                        <div class="project-card">
+                            <img src="./images/CircuitCart.png" 
+                                alt="E-Commerce Website" 
+                                class="project-card-img">
+                            <div class="project-card-content">
+                                <h4 class="project-card-title">E-Commerce Website</h4>
+                                <p class="project-card-description">
+                                    Full-stack e-commerce platform with login/authentication, session management, dynamic cart, and role-based navigation.
+                                </p>
+                                <div class="project-card-badges">
+                                    <span class="badge badge-secondary">PHP</span>
+                                    <span class="badge badge-secondary">MySQL</span>
+                                    <span class="badge badge-secondary">HTML/CSS/JS</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Anti-Vaping Game -->
+                        <div class="project-card">
+                            <img src="./images/VapeQuest.png" 
+                                alt="Anti Vaping Game" 
+                                class="project-card-img">
+                            <div class="project-card-content">
+                                <h4 class="project-card-title">Anti-Vaping Game</h4>
+                                <p class="project-card-description">
+                                    Interactive game designed in Godot with storyline, programming, and gameplay to educate users on vaping risks.
+                                </p>
+                                <div class="project-card-badges">
+                                    <span class="badge badge-secondary">Godot</span>
+                                    <span class="badge badge-secondary">GDScript</span>
+                                    <span class="badge badge-secondary">Game Design</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Rehabilitation App -->
+                        <div class="project-card">
+                            <img src="https://placehold.co/400x250/ADD8E6/FFFFFF.png?text=Rehab+App" alt="Rehabilitation App"
+                                alt="Rehabilitation App" 
+                                class="project-card-img">
+                            <div class="project-card-content">
+                                <h4 class="project-card-title">Rehabilitation App</h4>
+                                <p class="project-card-description">
+                                    Mobile app that collects and visualizes rehabilitation data, displaying progress through interactive graphs.
+                                </p>
+                                <div class="project-card-badges">
+                                    <span class="badge badge-secondary">Java</span>
+                                    <span class="badge badge-secondary">Graphs</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Hangman Game -->
+                        <div class="project-card">
+                            <img src="./images/HangMan.png" 
+                                alt="Hangman Game" 
+                                class="project-card-img">
+                            <div class="project-card-content">
+                                <h4 class="project-card-title">Hangman Game</h4>
+                                <p class="project-card-description">
+                                    Classic Hangman game implemented in HTML with interactive gameplay and user input validation.
+                                </p>
+                                <div class="project-card-badges">
+                                    <span class="badge badge-secondary">HTML</span>
+                                    <span class="badge badge-secondary">CSS</span>
+                                    <span class="badge badge-secondary">JavaScript</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mr Bean Fanpage -->
+                        <div class="project-card">
+                            <img src="./images/MrBean.png" 
+                                alt="Mr Bean Fanpage" 
+                                class="project-card-img">
+                            <div class="project-card-content">
+                                <h4 class="project-card-title">Mr Bean Fanpage</h4>
+                                <p class="project-card-description">
+                                    HTML website showcasing Mr Bean’s achievements, roles, and featuring music, video, and contact page.
+                                </p>
+                                <div class="project-card-badges">
+                                    <span class="badge badge-secondary">HTML</span>
+                                    <span class="badge badge-secondary">CSS</span>
+                                    <span class="badge badge-secondary">Media Integration</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Food Delivery App -->
+                        <div class="project-card">
+                            <img src="./images/MIT.png" 
+                                alt="Food Delivery App" 
+                                class="project-card-img">
+                            <div class="project-card-content">
+                                <h4 class="project-card-title">Food Delivery App</h4>
+                                <p class="project-card-description">
+                                    Food ordering mobile application created with MIT App Inventor, enabling easy menu browsing and ordering.
+                                </p>
+                                <div class="project-card-badges">
+                                    <span class="badge badge-secondary">MIT App Inventor</span>
+                                    <span class="badge badge-secondary">Mobile App</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Let's Work Together</h2>
+                </div>
+                <div class="contact-grid">
+                    <!-- Contact Information -->
+                    <div class="contact-info">
+                        <div class="contact-info-card">
+                            <h3 class="contact-info-title">Contact Information</h3>
+                            <div class="contact-info-item">
+                                <div class="contact-info-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                        <polyline points="22,6 12,13 2,6"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="contact-info-label">Email</p>
+                                    <a href="mailto:yolandayenck@gmail.com" class="contact-info-value">yolandayenck@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-info-item">
+                                <div class="contact-info-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="contact-info-label">Phone</p>
+                                    <a href="tel:+6580236268" class="contact-info-value">+65 8023 6269</a>
+                                </div>
+                            </div>
+                            <div class="contact-info-item">
+                                <div class="contact-info-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                        <circle cx="12" cy="10" r="3"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="contact-info-label">Location</p>
+                                    <p class="contact-info-value">Singapore, SG</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-availability-card">
+                            <h3 class="contact-availability-title">Available for Work</h3>
+                            <p class="contact-availability-text">
+                                I'm currently looking for a work-study position in software development
+                            </p>
+                            <div class="contact-availability-status">
+                                <div class="status-indicator"></div>
+                                <span class="status-text">Available Now</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    © <span id="currentYear"></span> Made by Yolanda
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
