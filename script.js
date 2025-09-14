@@ -107,23 +107,23 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // Add typing effect to hero title (optional enhancement)
-    const heroTitle = document.querySelector('.hero-title');
-    if (heroTitle) {
-        const originalText = heroTitle.innerHTML;
-        heroTitle.innerHTML = '';
+    // const heroTitle = document.querySelector('.hero-title');
+    // if (heroTitle) {
+    //     const originalText = heroTitle.innerHTML;
+    //     heroTitle.innerHTML = '';
         
-        let i = 0;
-        const typeWriter = () => {
-            if (i < originalText.length) {
-                heroTitle.innerHTML += originalText.charAt(i);
-                i++;
-                setTimeout(typeWriter, 50);
-            }
-        };
+    //     let i = 0;
+    //     const typeWriter = () => {
+    //         if (i < originalText.length) {
+    //             heroTitle.innerHTML += originalText.charAt(i);
+    //             i++;
+    //             setTimeout(typeWriter, 50);
+    //         }
+    //     };
         
-        // Start typing effect after a short delay
-        setTimeout(typeWriter, 0);
-    }
+    //     // Start typing effect after a short delay
+    //     setTimeout(typeWriter, 0);
+    // }
     
     // Mobile menu toggle (if needed for smaller screens)
     const createMobileMenu = () => {
