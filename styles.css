@@ -270,11 +270,6 @@ p {
   line-height: 1.1;
 }
 
-@media (min-width: 768px) {
-  .hero-title {
-    font-size: 3.75rem;
-  }
-}
 
 .hero-subtitle {
   font-size: 1.5rem;
