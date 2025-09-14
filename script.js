@@ -105,26 +105,7 @@ document.addEventListener('DOMContentLoaded', function() {
             this.style.transform = 'translateY(0)';
         });
     });
-    
-    // Add typing effect to hero title (optional enhancement)
-    // const heroTitle = document.querySelector('.hero-title');
-    // if (heroTitle) {
-    //     const originalText = heroTitle.innerHTML;
-    //     heroTitle.innerHTML = '';
-        
-    //     let i = 0;
-    //     const typeWriter = () => {
-    //         if (i < originalText.length) {
-    //             heroTitle.innerHTML += originalText.charAt(i);
-    //             i++;
-    //             setTimeout(typeWriter, 50);
-    //         }
-    //     };
-        
-    //     // Start typing effect after a short delay
-    //     setTimeout(typeWriter, 0);
-    // }
-    
+
     // Mobile menu toggle (if needed for smaller screens)
     const createMobileMenu = () => {
         const header = document.querySelector('.header');
@@ -231,4 +212,5 @@ style.textContent = `
         outline-offset: 2px !important;
     }
 `;
+
 document.head.appendChild(style);
